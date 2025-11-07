@@ -1,0 +1,4 @@
+:root {
+  --bg:#0b0f14; --card:#111827; --ink:#e5e7eb; --muted:#9ca3af; --accent:#38bdf8; --line:#1f2937;
+}
+html, body, #root { height: 100%; }
