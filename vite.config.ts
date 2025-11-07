@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react"
 import { VitePWA } from "vite-plugin-pwa"
 
 export default defineConfig({
+  base: "/multi-lnkopslista/",
   plugins: [
     react(),
     VitePWA({
@@ -14,13 +15,22 @@ export default defineConfig({
         name: "Multi-lnkopslista",
         short_name: "Inköpslistor",
         description: "Vardagslistor och önskelistor med länkar, bilder och offline-stöd.",
-        start_url: ".",
+        start_url: "/multi-lnkopslista/",
         display: "standalone",
         background_color: "#0b0f14",
         theme_color: "#1f2937",
         icons: [
-          { src: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
-          { src: "/icons/icon-512.png", sizes: "512x512", type: "image/png", purpose: "any maskable" }
+          {
+            src: "/multi-lnkopslista/icons/icon-192.png",
+            sizes: "192x192",
+            type: "image/png"
+          },
+          {
+            src: "/multi-lnkopslista/icons/icon-512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "any maskable"
+          }
         ]
       }
     })
